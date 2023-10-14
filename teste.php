@@ -17,7 +17,7 @@ $usuarios = [12550162994 =>[
 // adicionar um usuario 
 $usuarios [12322222245] = [
     'titular'=> 'pedro',
-    'saldo' => 4000
+    'saldo' => 40000
     ];
 // depositar
 $usuarios [12334563856] = deposito ($usuarios[12334563856],valoradepositar:0);
