@@ -26,10 +26,7 @@ $usuarios [12322222245] = sacar ($usuarios [12322222245], valorasacar:0 );
 // deletar uma conta 
 unset ($usuarios [12384563756]);
 
-/* foreache , loop para mostrar todas as contas 
-foreach ($usuarios as $cpf => $conta) {
-    exibemensagem (mensagem: "$cpf {$conta ['titular']} {$conta ['saldo']}" );
-}*/
+
 
 ?>
 <!DOCTYPE html>
@@ -42,8 +39,8 @@ foreach ($usuarios as $cpf => $conta) {
 <body>
     <h1>DADOS DOS CLIENTES<h1>
     <?php foreach ($usuarios as $cpf => $conta)  {?>
-        <dt><h3><?= $conta ['titular'];?>- <?= $cpf;?> </h3></dt>
-        <dd>saldo:<?=  $conta ['saldo'];?></dd>
+        <dt><h3><?= $conta ['titular']. PHP_EOL?>- <?= $cpf;?> </h3></dt>
+        <dd>saldo:<?=  $conta ['saldo'] . PHP_EOL?></dd>
     <?php   }?>
 </body>
 </html>
